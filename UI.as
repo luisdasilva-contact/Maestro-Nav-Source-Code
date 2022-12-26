@@ -3,7 +3,7 @@
 */
 
 class UI {
-	private static var _transitionFrame:Number = 11; // The frame in which the transition animation completely covers the screen; utilized by other functions which need to run background processes behind the scenes.
+	private static var _transitionFrame:Number = 11; // The frame in which the transition animation completely covers the screen; utilized by other functions which 	need to run background processes behind the scenes.
 	private static var _healthIcons:Array = [];
 	private static var _gemHolster:Array = [];
 	private static var _gemIcons:Array = [];
@@ -90,6 +90,7 @@ class UI {
 	
 	/*
 	 * Initializes the "Next" button on the tutorial's first page. Retrieves button directly from the stage. 
+	 * @param {Number} currentTutPage Retrieves the current page the player is viewing.
 	*/
 	public static function tutNextButtonInit(currentTutPage:Number):Void {
 		var tutNextButton = _root['tutNext'];
@@ -102,6 +103,7 @@ class UI {
 	
 	/*
 	 * Initializes the "Start Game" button across several pages, like the intro or game over screen. Retrieves button directly from the stage. 
+	 * @param {String} buttonTitle The instance name of the button, used for assigning functionality to the MovieClip.
 	*/
 	public static function startGameButtonInit(buttonTitle:String):Void {
 		var startGameButton = _root[buttonTitle];
@@ -117,6 +119,7 @@ class UI {
 	
 	/*
 	 * Initializes a button to go back to the main menu; currently used on the last frame of the game when the user beats the encore. 
+	 * @param {String} buttonTitle The instance name of the button, used for assigning functionality to the MovieClip.
 	*/
 	public static function backToMenuButtonInit(buttonTitle:String):Void {
 		var backToMenuButton = _root[buttonTitle];
