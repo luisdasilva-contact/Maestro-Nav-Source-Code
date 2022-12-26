@@ -8,7 +8,7 @@ class levelProps {
 	private static var _topRoadY:Number;
 	private static var _midRoadY:Number;
 	private static var _lowRoadY:Number;	
-	private static var _collidedItemCounter:Number; // Tracks the number of items the user has collided with. Used to provide unique instance names to collision animations.
+	private static var _collidedItemCounter:Number; // Tracks the number of items the user has collided with. Used to provide unique instance names to collision 	animations.
 	private static var _currentLevelNo:Number; 
 	private static var _gameStarted:Boolean = false;
 	private static var _gameTimeAtStart:Number; // number of MS that passed between the .swf opening and the level beginning
@@ -112,9 +112,7 @@ class levelProps {
 	
 	public static function get enemySpawnNoMax():Number {
 		return _enemySpawnNoMax;
-	};
-	
-	
+	};	
 	
 	/*
 	 * Sets variables specific to each level.  
