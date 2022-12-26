@@ -50,6 +50,14 @@ class playerProps{
 	};
 	
 	/*
+	 * Retrieves player Movie Clip from the timeline.
+	 * @return {MovieClip} The player's Movie Clip.
+	*/ 
+	public static function get player():MovieClip {
+		return _root['receptor'];
+	}
+	
+	/*
 	 * Sets player hurt state and changes animation accordingly. 
 	 * @param {Boolean} newState Whether or not the player is hurt.
 	*/
@@ -67,15 +75,7 @@ class playerProps{
 				};	
 			};
 		};
-	};
-	
-	/*
-	 * Retrieves player Movie Clip from the timeline.
-	 * @return {MovieClip} The player's Movie Clip.
-	*/ 
-	public static function get player():MovieClip {
-		return _root['receptor'];
-	}
+	};	
 	
 	/*
 	 * Sets player health. Also resets rhythm counter if player was hurt. 
