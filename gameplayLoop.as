@@ -31,6 +31,14 @@ class gameplayLoop {
 		return _setIntervalID;
 	};
 	
+	public static function get onScreenItems():Array {
+		return _onScreenItems;
+	};
+	
+	public static function set onScreenItems(newItems:Array){
+		_onScreenItems = newItems;
+	};
+	
 	/*
 	 * Set the rhythm counter to a specified value. Also contains functionality to reset counter to 0 and reward player with a power-up if they reach
 	   the rhythm reward threshold.
@@ -47,15 +55,7 @@ class gameplayLoop {
 		};
 		
 		UI.setRhythmValue(_rhythmCounter);
-	};
-	
-	public static function get onScreenItems():Array {
-		return _onScreenItems;
-	};
-	
-	public static function set onScreenItems(newItems:Array){
-		_onScreenItems = newItems;
-	};	
+	};		
 	
 	/*
 	 * Initiates variables and functionality related to gameplay.  
